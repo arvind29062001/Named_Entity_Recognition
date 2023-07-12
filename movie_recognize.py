@@ -1,5 +1,4 @@
 import json
-
 def convert_to_single_line(text):
     # Replace newline characters with a space
     single_line_text = text.replace('\n', ' ')
@@ -13,12 +12,10 @@ def generate_substrings(text):
     substrings = []
     words = text.split()
     n = len(words)
-    
     for i in range(n):
         for j in range(i+1, n+1):
             substring = ' '.join(words[i:j])
             substrings.append(substring)
-    
     return substrings
 
 def find_movie_substrings(text):
@@ -52,10 +49,7 @@ Apply Now
 b
 M-Ticket
 Rs.178.32
-play
-By beckshow Siddhant Manchandani
-X
-*T & C Apply'''
+'''
 text=convert_to_single_line(text)
 find_movie_substrings(text)
 
