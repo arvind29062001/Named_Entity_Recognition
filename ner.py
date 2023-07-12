@@ -319,7 +319,7 @@ for ent in doc.ents:
         print(ent.text, ": SEAT NO")
     elif ent.label_=="TICKET_NO":
         print(ent.text," : TICKET NO.")
-    elif ent.label_ == "PRICE":
+    elif ent.label_ == "PRICE"or ent.label_=="MONEY":
         print(ent.text, ": PRICE")
     elif ent.label_=="GPE":
         print(ent.text,": VENUE")
