@@ -311,7 +311,7 @@ doc = nlp(test)
 for ent in doc.ents:
     if ent.label_ == "DATE":
         print(ent.text, ": DATE")
-    elif ent.label_=="MOVIE":
+    elif ent.label_=="MOVIE" or ent.label_=="WORK_OF_ART":
         print(ent.text,": MOVIE")
     elif ent.label_ == "TIME":
         print(ent.text, ": TIME")
